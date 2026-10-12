@@ -2,7 +2,7 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "npx http-server . -p 8080 -s",
+      "startServerCommand": "npx http-server ./front_end -p 8080 -s",
       "startServerReadyPattern": "Available on:",
       "url": [
         "http://localhost:8080/",
