@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio DevOps Lab 1: thực hành HTML, CSS, Git, GitHub Actions và CI/CD.">
+  <meta name="theme-color" content="#111827">
+  <title>Trang chủ | DevOps Lab 1 Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng, đến nội dung chính</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="index.html" aria-label="Portfolio DevOps Lab 1 - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>DevOps<span class="brand-muted">.Lab</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          PORTFOLIO · DEVOPS LAB 1
+        </p>
+
+        <h1>Xin chào, mình đang học <span class="gradient-text">DevOps.</span></h1>
+
+        <p class="hero-description">
+          Đây là website thực hành triển khai tự động với GitHub Actions và GitHub Pages.
+          Mỗi lần cập nhật mã nguồn, pipeline sẽ kiểm tra và triển khai phiên bản mới.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="about.html">
+            Tìm hiểu về mình <span aria-hidden="true">→</span>
+          </a>
+          <a class="button button-secondary" href="contact.html">Liên hệ</a>
+        </div>
+
+        <div class="tech-list" aria-label="Công nghệ sử dụng">
+          <span class="badge">HTML5</span>
+          <span class="badge">CSS3</span>
+          <span class="badge">Git</span>
+          <span class="badge">GitHub Actions</span>
+          <span class="badge">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-glow" aria-hidden="true"></div>
+
+        <img
+          class="avatar"
+          src="assets/avatar.svg"
+          alt="Hình đại diện minh họa"
+          width="144"
+          height="144"
+        >
+
+        <p class="profile-label">ĐANG THỰC HÀNH</p>
+        <h2>Build · Test · Deploy</h2>
+        <p class="muted">Tự động hóa quy trình phát hành website.</p>
+
+        <div class="pipeline" aria-label="Các bước trong pipeline">
+          <span><b>01</b> Push code</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span><b>02</b> CI checks</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span><b>03</b> Deploy</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <p class="eyebrow">TỔNG QUAN</p>
+        <h2 id="overview-title">Những gì mình đang học</h2>
+        <p class="muted">Các kiến thức nền tảng trong bài thực hành đầu tiên.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">⌘</span>
+          <h3>Quản lý mã nguồn</h3>
+          <p>Sử dụng Git và GitHub để theo dõi thay đổi, quản lý phiên bản và lưu trữ mã nguồn.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">⚙</span>
+          <h3>Tự động hóa CI/CD</h3>
+          <p>Thiết lập workflow để kiểm tra dự án và tự động triển khai khi có commit mới.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">↗</span>
+          <h3>Đo lường chất lượng</h3>
+          <p>Dùng Lighthouse để đánh giá hiệu năng, khả năng truy cập, SEO và thực hành tốt.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="status-panel container" aria-label="Thông tin triển khai">
+      <div>
+        <p class="eyebrow">TRẠNG THÁI PIPELINE</p>
+        <h2><span class="status-dot" aria-hidden="true"></span> Sẵn sàng triển khai</h2>
+      </div>
+
+      <div class="status-detail">
+        <span>Ngày hiện tại</span>
+        <strong id="date">Đang tải…</strong>
+      </div>
+
+      <div class="status-detail">
+        <span>Phương thức</span>
+        <strong>GitHub Actions</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> DevOps Lab 1 · My Portfolio</p>
+      <p>Push code <span aria-hidden="true">→</span> CI checks <span aria-hidden="true">→</span> Auto deploy</p>
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById('date').textContent = now.toLocaleDateString('vi-VN');
+    document.getElementById('year').textContent = String(now.getFullYear());
+  </script>
+</body>
+</html>

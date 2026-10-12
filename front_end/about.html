@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giới thiệu về quá trình học DevOps Lab 1 và các công nghệ đang thực hành.">
+  <meta name="theme-color" content="#111827">
+  <title>Giới thiệu | DevOps Lab 1 Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng, đến nội dung chính</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>DevOps<span class="brand-muted">.Lab</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html" aria-current="page">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page-main container">
+    <section class="page-heading">
+      <p class="eyebrow">GIỚI THIỆU</p>
+      <h1>Học hỏi từng bước,<br><span class="gradient-text">tự động hóa từng quy trình.</span></h1>
+      <p class="hero-description">
+        Mình đang thực hành các kỹ năng phát triển website và quy trình triển khai
+        phần mềm theo hướng DevOps.
+      </p>
+    </section>
+
+    <section class="content-card">
+      <h2>Mục tiêu của bài Lab</h2>
+      <p>
+        Xây dựng một website tĩnh có nhiều trang, đưa mã nguồn lên GitHub và thiết lập
+        pipeline CI/CD để tự động cập nhật website khi có thay đổi trên nhánh chính.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading left-heading">
+        <p class="eyebrow">LỘ TRÌNH</p>
+        <h2>Các kỹ năng đang thực hành</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">01</span>
+          <h3>HTML &amp; CSS</h3>
+          <p>Tạo cấu trúc trang rõ ràng, responsive và có độ tương phản tốt.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">02</span>
+          <h3>Git &amp; GitHub</h3>
+          <p>Quản lý phiên bản, commit thay đổi và cộng tác qua repository.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">03</span>
+          <h3>CI/CD</h3>
+          <p>Tự động kiểm tra và xuất bản website bằng GitHub Actions.</p>
+        </article>
+      </div>
+    </section>
+
+    <a class="text-link" href="contact.html">
+      Chuyển đến trang liên hệ <span aria-hidden="true">→</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> DevOps Lab 1 · My Portfolio</p>
+      <p>Build · Test · Deploy</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

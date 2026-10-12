@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thông tin liên hệ và GitHub của tác giả portfolio DevOps Lab 1.">
+  <meta name="theme-color" content="#111827">
+  <title>Liên hệ | DevOps Lab 1 Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng, đến nội dung chính</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>DevOps<span class="brand-muted">.Lab</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html" aria-current="page">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page-main container">
+    <section class="page-heading">
+      <p class="eyebrow">LIÊN HỆ</p>
+      <h1>Kết nối với <span class="gradient-text">mình.</span></h1>
+      <p class="hero-description">
+        Bạn có thể xem mã nguồn dự án hoặc liên hệ qua email bên dưới.
+      </p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="contact-card">
+        <span class="feature-icon" aria-hidden="true">@</span>
+        <h2>Email</h2>
+        <p class="muted">Liên hệ qua thư điện tử</p>
+        <a class="text-link" href="mailto:thienvukim@gmail.com">thienvukim@gmail.com</a>
+      </article>
+
+      <article class="contact-card">
+        <span class="feature-icon" aria-hidden="true">⌘</span>
+        <h2>GitHub</h2>
+        <p class="muted">Xem các dự án và mã nguồn</p>
+        <a
+          class="text-link"
+          href="https://github.com/ThienVuKim"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/ThienVuKim <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+    </section>
+
+    <a class="button button-secondary" href="index.html">← Quay lại trang chủ</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> DevOps Lab 1 · My Portfolio</p>
+      <p>Build · Test · Deploy</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
