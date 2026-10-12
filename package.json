@@ -1,0 +1,10 @@
+
+{
+  "name": "devops-lab1-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "http-server": "^14.1.1"
+  }
+}
