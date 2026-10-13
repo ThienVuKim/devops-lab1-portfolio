@@ -6,3 +6,5 @@ Họ và Tên : Vũ Kim Thiện
 Mã Sinh Viên : DTC235180174
 
 Lớp : KTPM K22A
+
+Quê : Thái Bình
